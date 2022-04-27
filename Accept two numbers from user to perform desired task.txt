@@ -1,0 +1,52 @@
+// Accept two numbers from user to perform desired task type-4//
+
+#include<stdio.h>
+
+int Operation(int,int);
+void main()
+{	int z;
+	int a,b;
+	printf("\nPlease Enter the 1st number = ");
+	scanf("%d",&a);
+	printf("\nPlease Enter the 2nd number = ");
+	scanf("%d",&b);
+	
+	z=Operation(a,b);
+	printf("\n Your Answer is = %d",z);
+}
+int Operation(int a,int b)
+{
+	int c,ans;
+	printf("\nPress 1 for Addition of the numbers");
+	printf("\nPress 2 for Substraction of the numbers");
+	printf("\nPress 3 for Multiplication of the numbers");
+	printf("\nPress 4 for Division of the numbers");
+	printf("\nPress 5 for Remainder of the numbers\n");
+	scanf("\n%d",&c);
+	
+	if(c==1)
+	{
+		ans=a+b;
+		return ans;
+	}
+	else if(c==2)
+	{
+		ans=a-b;
+		return ans;
+	}
+	else if(c==3)
+	{
+		ans=a*b;
+		return ans;
+	}
+	else if(c==4)
+	{
+		ans=a/b;
+		return ans;
+	}
+	else if(c==5)
+	{
+		ans=a%b;
+		return ans;
+	}
+}
